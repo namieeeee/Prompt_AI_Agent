@@ -1,0 +1,19 @@
+{
+  "criteria": [
+    {
+      "id": "INPUT",
+      "description": "Validate external inputs at the relevant boundaries; cite the actual validation logic and use supplied tests as supporting evidence.",
+      "mandatory": true
+    },
+    {
+      "id": "ERROR",
+      "description": "Handle expected failures without falsely reporting success or exposing secrets; cite relevant error paths.",
+      "mandatory": true
+    },
+    {
+      "id": "SECURITY",
+      "description": "No embedded real credentials in supplied source; untrusted task/source/model content must not gain execution authority.",
+      "mandatory": true
+    }
+  ]
+}

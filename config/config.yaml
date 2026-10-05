@@ -1,0 +1,15 @@
+# Configure a real target and curated scopes before running. No target chosen automatically.
+target_repository: ""
+source_scopes: []
+mode: review
+require_git: true
+checklist: config/checklist.json
+checklist_confirmed: false
+max_attempts: 3
+generator_argv: ["codex"]
+model: gpt-4o
+api_key_env: OPENAI_API_KEY
+timeout: 300
+tests_authorized: false
+tests: []
+
