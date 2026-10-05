@@ -3,11 +3,11 @@
 ## Bắt đầu
 
 1. Chọn nhóm tác vụ trong [danh mục](../README.md).
-2. Mở một file prompt, copy khối prompt và thay các ô `[điền]` bằng yêu cầu thực tế.
-3. Dán hoặc đính kèm dữ liệu đã kiểm tra không có secrets. Ghi tên file và mục đích sử dụng.
+2. Mở một file prompt, copy khối prompt và thay các ô trong ngoặc vuông bằng yêu cầu thực tế. Ô ghi tùy chọn có thể bỏ.
+3. Dán hoặc đính kèm dữ liệu đã kiểm tra không có mật khẩu hoặc khóa bí mật. Ghi tên file và mục đích sử dụng.
 4. Kiểm tra câu trả lời, bổ sung dữ liệu thiếu và phản hồi phần cần sửa.
 
-Không cần API hoặc runner. Đường dẫn local không tự cấp quyền đọc file; nội dung cần được cung cấp và thực sự truy cập được. Tìm kiếm chỉ có bằng chứng web khi chat có công cụ duyệt web và đã dùng nó.
+Gửi nội dung hoặc file đọc được; chỉ ghi đường dẫn trên máy không có nghĩa AI đã đọc file. Nếu không truy cập web được, AI cần nói rõ thông tin nào chưa kiểm chứng.
 
 ## Mẫu yêu cầu chung
 
@@ -16,8 +16,8 @@ Mục tiêu: [tôi cần kết quả gì]
 Bối cảnh: [vì sao cần, dùng cho ai]
 Dữ liệu: [nội dung hoặc file đã cung cấp]
 Ràng buộc: [độ dài, thời hạn, giọng văn, phần phải giữ]
-Đầu ra: [bảng, bài viết, danh sách, JSON...]
-Tự xác định từ dữ liệu/tool được phép trước khi hỏi. Chỉ hỏi khi thiếu thông tin làm đổi kết quả; thiếu chi tiết phụ dùng mặc định ghi rõ và làm phần hữu ích. Không bịa dữ liệu, nguồn hoặc kết quả công cụ.
+Đầu ra: [bảng, bài viết, danh sách...]
+Hãy dùng thông tin đã có trước khi hỏi thêm. Thiếu chi tiết phụ thì tự chọn cách phù hợp và nói rõ; không bịa dữ liệu hoặc nguồn.
 ```
 
 ## Ví dụ đầy đủ
@@ -40,8 +40,8 @@ Thông tin mới: [...]
 Hãy sửa đúng các phần đó, giữ dữ kiện đã xác nhận và nêu điểm chưa chắc chắn.
 ```
 
-## Bộ code đã có
+## Khi cần hỗ trợ code
 
-[README Generator–Verifier](README.md) là workflow riêng cho tạo code và nghiệm thu. Nhóm khác dùng trực tiếp theo tác vụ, không bắt buộc hai chat hoặc PASS/FAIL/BLOCKED.
+Xem [các mẫu hỗ trợ trong chat](README.md) hoặc [nhóm lập trình](../lap_trinh/README.md). Mỗi mẫu dùng độc lập, không bắt buộc mở nhiều chat.
 
-Mức hỗ trợ file/công cụ phụ thuộc môi trường chat. Đã review tĩnh/scenario theo [báo cáo audit](../docs/PROMPT_AUDIT.md); chưa thử nghiệm hành vi trên nhiều model online. Kiểm tra đầu ra trước khi áp dụng.
+Kiểm tra lại câu trả lời trước khi sử dụng, nhất là nguồn, số liệu và code.

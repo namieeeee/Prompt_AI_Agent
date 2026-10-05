@@ -1,5 +1,7 @@
 # Audit prompt toàn repository — 2026-10-05
 
+> Báo cáo lịch sử của commit `2d6c199`, trước lần giản lược dành cho người dùng cơ bản. Các điểm số, contract và scenario bên dưới mô tả phiên bản cũ; xem README và từng prompt để dùng nội dung hiện tại.
+
 Baseline: `5bba773a6737c89b775f2f63f25bdb089c340dd8`; branch `main`; origin `https://github.com/namieeeee/Prompt_AI_Agent.git`; working tree sạch trước nhiệm vụ.
 
 Phạm vi: 53 file Markdown có sẵn (40 file prompt/instruction/template, 13 README), 12 nhóm. Không đọc/review/sửa source bên trong `prompt_library/` hoặc archive `prompt_library.zip`. Inventory và nhận xét trước sửa được lập trước khi refactor. Báo cáo này là tài liệu audit, không phải prompt mới.

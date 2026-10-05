@@ -1,17 +1,21 @@
-# Task gửi Generator
-TASK_ID: [tên task]
-TASK: [yêu cầu cụ thể]
-EXPECTED_BEHAVIOR: [ví dụ input → output và failure cases]
-PROJECT_STACK: [ngôn ngữ/framework/version]
-ALLOWED_FILES: [đường dẫn tương đối được sửa]
-OUT_OF_SCOPE: [phần không được sửa]
-CONVENTIONS: [naming, dependencies được phép/cấm, contract cần giữ]
-CHECKLIST: [dán criteria với ID, mô tả, mandatory đã chốt]
-SOURCE_MANIFEST: [file + snapshot/commit/hash, trạng thái full source]
-CURRENT_SOURCE: [đính kèm file hoặc code block riêng từng file]
-VALIDATION_COMMANDS: [lệnh đã được người dùng review; chưa chạy hay có output]
-PREVIOUS_FEEDBACK: [không hoặc báo cáo lần trước đầy đủ]
+# Mẫu yêu cầu viết hoặc sửa code
 
-Bắt buộc: TASK, behavior/acceptance và phạm vi; CURRENT_SOURCE cần cho sửa code, còn task tạo file mới độc lập có thể không có source. CHECKLIST cần được chốt nếu task sẽ nghiệm thu bằng Verifier.
-PROJECT_STACK/CONVENTIONS/manifest có thể tự xác định từ source/tool khi rõ. VALIDATION_COMMANDS và PREVIOUS_FEEDBACK là tùy chọn; không có feedback thì ghi không. Ô chưa điền không phải dữ kiện và không tự cấp quyền thực thi; chỉ BLOCKED khi phần thiếu ảnh hưởng tính đúng, vẫn làm phần độc lập đủ dữ liệu.
+Dùng để mô tả việc bạn cần trước khi gửi vào chat. Chỉ cần điền yêu cầu; các mục khác bổ sung khi liên quan. Có thể dùng mẫu này độc lập.
 
+## Mẫu để copy
+
+```text
+Hãy giúp tôi với yêu cầu code sau.
+Việc cần làm: [điền]
+Kết quả tôi mong đợi: [điền nếu chưa rõ trong yêu cầu]
+Code hiện tại: [dán/đính kèm nếu cần sửa]
+Ngôn ngữ hoặc thư viện: [tùy chọn nếu chưa rõ từ code]
+Phần cần giữ nguyên: [tùy chọn]
+Đầu ra tôi muốn: [tùy chọn; mặc định code đề xuất và cách kiểm tra]
+
+Hãy dùng thông tin đã có trước khi hỏi thêm. Không đọc được file thì nói rõ; không đoán nội dung hoặc khẳng định đã sửa/chạy kiểm thử nếu chỉ đưa hướng dẫn.
+```
+
+## Ví dụ
+
+Tạo hàm Python đếm số dòng không trống; trả code và ví dụ gọi hàm. Đây là code mới nên không có code hiện tại.
