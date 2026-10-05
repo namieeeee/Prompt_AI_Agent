@@ -1,13 +1,13 @@
-# D?ch thu?t v? hi?u ??nh
+# Dịch thuật và hiệu đính
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [D?ch v?n b?n theo ng? c?nh](dich_van_ban.md) | D?ch email ti?ng Vi?t sang ti?ng Anh l?ch s?; gi? nguy?n t?n s?n ph?m v? ng?y. |
-| [Hi?u ??nh b?n d?ch](hieu_dinh_ban_dich.md) | Hi?u ??nh b?n d?ch h??ng d?n s? d?ng, gi? thu?t ng? theo glossary ???c g?i. |
-| [Gi?i th?ch s?c th?i di?n ??t](giai_thich_sac_thai.md) | So s?nh can you v? could you trong email nh? ??ng nghi?p ki?m tra t?i li?u. |
+| [Dịch văn bản theo ngữ cảnh](dich_van_ban.md) | Dịch email Việt sang Anh lịch sự; giữ tên sản phẩm và ngày. |
+| [Hiệu đính bản dịch](hieu_dinh_ban_dich.md) | Hiệu đính bản dịch hướng dẫn sử dụng, giữ thuật ngữ theo glossary gửi kèm. |
+| [Giải thích sắc thái diễn đạt](giai_thich_sac_thai.md) | So sánh can you và could you trong email nhờ đồng nghiệp kiểm tra tài liệu. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

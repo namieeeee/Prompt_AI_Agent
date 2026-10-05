@@ -1,13 +1,13 @@
-# T?m ki?m v? nghi?n c?u
+# Tìm kiếm và nghiên cứu
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [Nghi?n c?u m?t ch? ??](tim_kiem_chuyen_sau.md) | Ch? ??: ph??ng ph?p h?c ngo?i ng?; ph?m vi: ng??i m?i; ?u ti?n nghi?n c?u g?c; m?c chi ti?t: v?a. |
-| [Ki?m ch?ng m?t th?ng tin](kiem_chung_thong_tin.md) | Ph?t bi?u: m?t b?i ??ng n?i th?nh ph? X ?? c?m ph??ng ti?n Y; cung c?p URL ho?c n?i dung b?i ??ng v? ng?y. |
-| [??i chi?u nhi?u ngu?n](so_sanh_nhieu_nguon.md) | So s?nh ba b?i vi?t v? l?m vi?c t? xa, g?i n?i dung t?ng b?i v? quan t?m ??n n?ng su?t. |
+| [Nghiên cứu một chủ đề](tim_kiem_chuyen_sau.md) | Nghiên cứu phương pháp học ngoại ngữ cho người mới, ưu tiên nghiên cứu gốc. |
+| [Kiểm chứng một thông tin](kiem_chung_thong_tin.md) | Kiểm chứng bài đăng nói thành phố X cấm phương tiện Y; gửi nội dung hoặc URL và ngày. |
+| [Đối chiếu nhiều nguồn](so_sanh_nhieu_nguon.md) | So sánh ba bài về làm việc từ xa, tập trung vào năng suất; gửi nội dung từng bài. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

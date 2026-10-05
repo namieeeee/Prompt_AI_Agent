@@ -1,13 +1,13 @@
-# So s?nh v? l?a ch?n
+# So sánh và lựa chọn
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [So s?nh c?c ph??ng ?n](so_sanh_phuong_an.md) | So s?nh h?c bu?i t?i ho?c cu?i tu?n theo l?ch, chi ph? v? m?c n?ng l??ng c? nh?n. |
-| [??nh gi? r?i ro m?t l?a ch?n](danh_gia_rui_ro.md) | ??nh gi? r?i ro chuy?n c?ng c? qu?n l? c?ng vi?c cho nh?m 8 ng??i, ch?a c? k? ho?ch migration. |
-| [Ki?m tra m?t quy?t ??nh tr??c khi ch?t](kiem_tra_quyet_dinh.md) | Ki?m tra quy?t ??nh thu? v?n ph?ng m?i d?a tr?n chi ph? v? nhu c?u ?? cung c?p. |
+| [So sánh các phương án](so_sanh_phuong_an.md) | So sánh học buổi tối và cuối tuần theo lịch, chi phí, mức năng lượng. |
+| [Đánh giá rủi ro một lựa chọn](danh_gia_rui_ro.md) | Đánh giá rủi ro chuyển công cụ quản lý công việc cho nhóm tám người, chưa có kế hoạch migration. |
+| [Kiểm tra một quyết định trước khi chốt](kiem_tra_quyet_dinh.md) | Kiểm tra quyết định thuê văn phòng mới theo chi phí và nhu cầu cung cấp. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

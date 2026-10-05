@@ -1,13 +1,13 @@
-# ? t??ng v? k? chuy?n
+# Ý tưởng và kể chuyện
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [T?o ? t??ng ?a d?ng](tao_y_tuong.md) | T?o 8 ? t??ng n?i dung h?c Python cho ng??i m?i, video d??i 3 ph?t. |
-| [Vi?t c?u chuy?n](viet_cau_chuyen.md) | Truy?n ng?n 800 t? v? m?t ng??i s?a ??ng h? t?m th?y th?ng ?i?p t? t??ng lai. |
-| [X?y d?ng nh?n v?t](xay_dung_nhan_vat.md) | Nh?n v?t ch?nh l? k? s? tr? trong truy?n khoa h?c vi?n t??ng, s? th?t b?i nh?ng mu?n c?u nh?m. |
+| [Tạo ý tưởng đa dạng](tao_y_tuong.md) | Tạo tám ý tưởng video học Python cho người mới, mỗi video dưới ba phút. |
+| [Viết câu chuyện](viet_cau_chuyen.md) | Truyện 800 từ về người sửa đồng hồ tìm thấy thông điệp từ tương lai. |
+| [Xây dựng nhân vật](xay_dung_nhan_vat.md) | Kỹ sư trẻ trong truyện khoa học viễn tưởng, sợ thất bại nhưng muốn cứu nhóm. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

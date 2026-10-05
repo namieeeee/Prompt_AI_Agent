@@ -1,13 +1,13 @@
-# Ph?n t?ch v?n ?? v? d? li?u
+# Phân tích vấn đề và dữ liệu
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [Ph?n t?ch nguy?n nh?n](phan_tich_nguyen_nhan.md) | T? l? ho?n th?nh c?ng vi?c gi?m trong hai tu?n; cung c?p l?ch v? s? li?u thay v? k?t lu?n do nh?n vi?n. |
-| [Ph?n t?ch b?ng d? li?u](phan_tich_du_lieu.md) | CSV chi ti?u 3 th?ng g?m ng?y, nh?m, s? ti?n; t?m nh?m t?ng m?nh v? nguy?n nh?n c?n h?i th?m. |
-| [Ph?n bi?n m?t l?p lu?n](phan_bien_lap_luan.md) | Ph?n bi?n l?p lu?n: l?m vi?c nhi?u gi? lu?n d?n ??n hi?u qu? cao h?n. |
+| [Phân tích nguyên nhân](phan_tich_nguyen_nhan.md) | Tỷ lệ hoàn thành công việc giảm hai tuần; gửi lịch và số liệu trước khi kết luận nguyên nhân. |
+| [Phân tích bảng dữ liệu](phan_tich_du_lieu.md) | Phân tích CSV chi tiêu ba tháng gồm ngày, nhóm, số tiền; tìm nhóm tăng mạnh. |
+| [Phản biện một lập luận](phan_bien_lap_luan.md) | Phản biện lập luận: làm việc nhiều giờ luôn dẫn đến hiệu quả cao hơn. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

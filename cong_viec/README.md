@@ -1,13 +1,13 @@
-# L?p k? ho?ch v? b?o c?o c?ng vi?c
+# Lập kế hoạch và báo cáo công việc
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [L?p k? ho?ch th?c hi?n](lap_ke_hoach.md) | Chu?n b? workshop n?i b? 20 ng??i trong 2 tu?n, ng?n s?ch v? ng??i ph? tr?ch do ng??i d?ng ?i?n. |
-| [T?ng h?p cu?c h?p](tong_hop_cuoc_hop.md) | T?ng h?p transcript h?p d? ?n th?nh quy?t ??nh v? vi?c c?n l?m; thi?u ng??i ph? tr?ch ghi ch?a ch?t. |
-| [Vi?t b?o c?o ti?n ??](bao_cao_tien_do.md) | B?o c?o tu?n d? ?n API t? danh s?ch ticket v? k?t qu? ki?m tra th?c t?. |
+| [Lập kế hoạch thực hiện](lap_ke_hoach.md) | Chuẩn bị workshop nội bộ 20 người trong hai tuần; ngân sách và người phụ trách do người dùng điền. |
+| [Tổng hợp cuộc họp](tong_hop_cuoc_hop.md) | Tổng hợp transcript thành quyết định và việc cần làm; thiếu người phụ trách ghi chưa chốt. |
+| [Viết báo cáo tiến độ](bao_cao_tien_do.md) | Báo cáo tuần dự án API từ ticket và kết quả kiểm tra thực tế. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

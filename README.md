@@ -1,50 +1,50 @@
-# Th? vi?n prompt AI
+# Thư viện prompt AI
 
-Th? vi?n prompt ti?ng Vi?t theo nhi?u t?c v?: t?m ki?m, ph?n t?ch, h?c t?p, vi?t n?i dung, c?ng vi?c, kinh doanh, s?ng t?o, l?p tr?nh, d?ch thu?t, x? l? t?i li?u v? ra quy?t ??nh.
+Thư viện prompt tiếng Việt cho tìm kiếm, phân tích, học tập, viết nội dung, công việc, kinh doanh, sáng tạo, lập trình, dịch thuật, xử lý tài liệu và ra quyết định.
 
-## Ch?n t?c v?
+## Chọn tác vụ
 
-| Th? m?c | N?i dung |
+| Thư mục | Nội dung |
 |---|---|
-| [chatgpt_plus](chatgpt_plus/huong_dan_chung.md) | H??ng d?n chung v? m?u y?u c?u; gi? b? Generator?Verifier hi?n c? |
-| [search](search/README.md) | T?m ki?m v? nghi?n c?u: 3 prompt |
-| [phan_tich](phan_tich/README.md) | Ph?n t?ch v?n ?? v? d? li?u: 3 prompt |
-| [hoc_tap](hoc_tap/README.md) | H?c t?p v? luy?n t?p: 3 prompt |
-| [viet_noi_dung](viet_noi_dung/README.md) | Vi?t v? bi?n t?p n?i dung: 3 prompt |
-| [cong_viec](cong_viec/README.md) | L?p k? ho?ch v? b?o c?o c?ng vi?c: 3 prompt |
-| [kinh_doanh](kinh_doanh/README.md) | Ph?n t?ch kinh doanh v? s?n ph?m: 3 prompt |
-| [sang_tao](sang_tao/README.md) | ? t??ng v? k? chuy?n: 3 prompt |
-| [lap_trinh](lap_trinh/README.md) | L?p tr?nh v? review code: 3 prompt |
-| [dich_thuat](dich_thuat/README.md) | D?ch thu?t v? hi?u ??nh: 3 prompt |
-| [tai_lieu](tai_lieu/README.md) | ??c v? x? l? t?i li?u: 3 prompt |
-| [ra_quyet_dinh](ra_quyet_dinh/README.md) | So s?nh v? l?a ch?n: 3 prompt |
+| [chatgpt_plus](chatgpt_plus/huong_dan_chung.md) | Hướng dẫn chung và mẫu yêu cầu; giữ bộ Generator–Verifier hiện có |
+| [search](search/README.md) | Tìm kiếm và nghiên cứu: 3 prompt |
+| [phan_tich](phan_tich/README.md) | Phân tích vấn đề và dữ liệu: 3 prompt |
+| [hoc_tap](hoc_tap/README.md) | Học tập và luyện tập: 3 prompt |
+| [viet_noi_dung](viet_noi_dung/README.md) | Viết và biên tập nội dung: 3 prompt |
+| [cong_viec](cong_viec/README.md) | Lập kế hoạch và báo cáo công việc: 3 prompt |
+| [kinh_doanh](kinh_doanh/README.md) | Phân tích kinh doanh và sản phẩm: 3 prompt |
+| [sang_tao](sang_tao/README.md) | Ý tưởng và kể chuyện: 3 prompt |
+| [lap_trinh](lap_trinh/README.md) | Lập trình và review code: 3 prompt |
+| [dich_thuat](dich_thuat/README.md) | Dịch thuật và hiệu đính: 3 prompt |
+| [tai_lieu](tai_lieu/README.md) | Đọc và xử lý tài liệu: 3 prompt |
+| [ra_quyet_dinh](ra_quyet_dinh/README.md) | So sánh và lựa chọn: 3 prompt |
 
-## C?ch s? d?ng
+## Cách sử dụng
 
-1. Ch?n nh?m v? m? prompt ph? h?p.
-2. Copy kh?i `Prompt ?? copy` v?o chat AI b?n ?ang d?ng.
-3. Thay c?c ? `[?i?n]`, d?n ho?c ??nh k?m d? li?u th?c t?. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`.
-4. Ki?m tra ??u ra; y?u c?u s?a c? th? ho?c cung c?p th?m th?ng tin khi c?n.
+1. Chọn nhóm và mở prompt phù hợp.
+2. Copy khối `Prompt để copy` vào chat AI.
+3. Thay các ô `[điền]`, dán hoặc đính kèm dữ liệu thực tế. Ô không áp dụng ghi rõ `không áp dụng`.
+4. Kiểm tra đầu ra; yêu cầu sửa cụ thể hoặc cung cấp thêm thông tin.
 
-C?c prompt d?ng th? c?ng, kh?ng y?u c?u API. Kh? n?ng ??c file, t?m web ho?c ch?y code t?y c?ng c? th?c t? trong chat; prompt kh?ng t? t?o th?m quy?n truy c?p. Xem [h??ng d?n chung](chatgpt_plus/huong_dan_chung.md) ?? c? m?u ??u v?o ho?n ch?nh.
+Dùng thủ công, không yêu cầu API. Khả năng đọc file, tìm web hoặc chạy code tùy công cụ thực tế; prompt không tạo thêm quyền truy cập. Xem [hướng dẫn chung](chatgpt_plus/huong_dan_chung.md) để có mẫu đầu vào hoàn chỉnh.
 
-## Nguy?n t?c s? d?ng
+## Nguyên tắc sử dụng
 
-- Kh?ng g?i secrets, keyfiles ho?c d? li?u c? nh?n kh?ng c?n thi?t.
-- V?i t?m ki?m: c?n ngu?n th?c s? ??c ???c, ng?y v? gi?i h?n th?ng tin; kh?ng ch?p nh?n URL b?a.
-- V?i ph?n t?ch: ph?n bi?t d? ki?n, gi? ??nh, suy lu?n v? ph?p t?nh.
-- V?i vi?t/s?ng t?o: gi? d? ki?n ?? ch?t, ghi r? n?i dung h? c?u.
-- V?i code: ?? xu?t patch kh?ng ??ng ngh?a ?? s?a source ho?c ch?y test.
-- V?i quy?t ??nh: ghi r? ti?u ch?, trade-off v? d? li?u c?n thi?u; ng??i d?ng quy?t ??nh cu?i c?ng.
+- Không gửi secrets, keyfiles hoặc dữ liệu cá nhân không cần thiết.
+- Tìm kiếm: cần nguồn thực sự đọc được, ngày và giới hạn; không chấp nhận URL bịa.
+- Phân tích: phân biệt dữ kiện, giả định, suy luận và phép tính.
+- Viết/sáng tạo: giữ dữ kiện đã chốt, ghi rõ nội dung hư cấu.
+- Code: patch đề xuất không đồng nghĩa đã sửa source hoặc chạy test.
+- Quyết định: ghi tiêu chí, trade-off và dữ liệu thiếu; người dùng quyết định cuối cùng.
 
-## Th?m prompt m?i
+## Thêm prompt mới
 
-M?i nh?m c? README v? c?c file Markdown ??c l?p. File m?i c?n: m?c ??ch, th?ng tin c?n ?i?n, kh?i prompt, v? d? v? gi?i h?n. Th?m link v?o README nh?m. Tr?nh t?o nhi?u prompt ch? kh?c t?n nh?ng th?c hi?n c?ng m?t vi?c.
+Mỗi nhóm có README và file Markdown độc lập. File mới cần mục đích, thông tin cần điền, khối prompt, ví dụ và giới hạn. Thêm link vào README nhóm. Tránh nhiều prompt chỉ khác tên nhưng cùng việc.
 
-## Source v? workflow code hi?n c?
+## Source và workflow code hiện có
 
-Th? m?c [prompt_library](prompt_library/README.md) ch?a source/workflow k? thu?t hi?n c?; b? [chatgpt_plus](chatgpt_plus/README.md) gi? prompt Generator?Verifier. C?c nh?m t?c v? m?i kh?ng ph? thu?c runner n?y.
+[prompt_library](prompt_library/README.md) chứa source/workflow kỹ thuật; [chatgpt_plus](chatgpt_plus/README.md) giữ bộ Generator–Verifier. Nhóm tác vụ mới không phụ thuộc runner này.
 
-## Tr?ng th?i ki?m ch?ng
+## Trạng thái kiểm chứng
 
-B? m?i g?m 33 prompt t?c v?, 11 README nh?m, m?t h??ng d?n chung v? README g?c. File UTF-8, tham chi?u n?i b? v? kh?i Markdown ???c ki?m tra tr??c khi b?n giao. Ch?a ??nh gi? h?nh vi ho?c so s?nh ch?t l??ng tr?n model online.
+Bộ mới gồm 33 prompt, 11 README nhóm, hướng dẫn chung và README gốc. File UTF-8, tham chiếu nội bộ và khối Markdown được kiểm tra trước khi bàn giao. Chưa đánh giá hành vi hoặc so sánh chất lượng trên model online.

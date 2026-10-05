@@ -1,13 +1,13 @@
-# Vi?t v? bi?n t?p n?i dung
+# Viết và biên tập nội dung
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [Vi?t b?i theo brief](viet_bai.md) | Vi?t b?i 500 t? h??ng d?n ng??i m?i qu?n l? c?ng vi?c, gi?ng d? hi?u, kh?ng ??a s? li?u kh?ng c? ngu?n. |
-| [So?n email](viet_email.md) | Email xin d?i cu?c h?p sang chi?u th? S?u, l?ch ?? xu?t do ng??i d?ng cung c?p. |
-| [Ch?nh v?n phong](chinh_van_phong.md) | Ch?nh b?o c?o c?ng vi?c cho r?, ng?n, l?ch s?; gi? nguy?n s? li?u v? t?n s?n ph?m. |
+| [Viết bài theo brief](viet_bai.md) | Viết bài 500 từ hướng dẫn người mới quản lý công việc, dễ hiểu, không có số liệu thiếu nguồn. |
+| [Soạn email](viet_email.md) | Email xin dời họp sang chiều thứ Sáu theo lịch người dùng cung cấp. |
+| [Chỉnh văn phong](chinh_van_phong.md) | Chỉnh báo cáo công việc cho ngắn, rõ, lịch sự; giữ số liệu và tên sản phẩm. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

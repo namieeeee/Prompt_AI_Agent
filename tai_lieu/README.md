@@ -1,13 +1,13 @@
-# ??c v? x? l? t?i li?u
+# Đọc và xử lý tài liệu
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [T?m t?t t?i li?u](tom_tat.md) | T?m t?t b?o c?o ??nh k?m th?nh 5 ? v? li?t k? gi?i h?n c?a b?o c?o. |
-| [Tr?ch xu?t d? li?u c? c?u tr?c](trich_xuat.md) | Tr?ch t?n h?ng m?c, th?i h?n, ng??i ph? tr?ch t? bi?n b?n; thi?u gi? tr? d?ng null. |
-| [H?i ??p d?a tr?n t?i li?u](hoi_dap.md) | Theo quy tr?nh ??nh k?m, ai duy?t y?u c?u v? tr??ng h?p n?o c?n duy?t b? sung? |
+| [Tóm tắt tài liệu](tom_tat.md) | Tóm tắt báo cáo đính kèm thành năm ý, liệt kê giới hạn của báo cáo. |
+| [Trích xuất dữ liệu có cấu trúc](trich_xuat.md) | Trích hạng mục, thời hạn, người phụ trách từ biên bản; thiếu giá trị dùng null. |
+| [Hỏi đáp dựa trên tài liệu](hoi_dap.md) | Theo quy trình đính kèm, ai duyệt yêu cầu và khi nào cần duyệt bổ sung? |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

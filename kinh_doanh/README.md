@@ -1,13 +1,13 @@
-# Ph?n t?ch kinh doanh v? s?n ph?m
+# Phân tích kinh doanh và sản phẩm
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [Ph?n t?ch nhu c?u kh?ch h?ng](phan_tich_khach_hang.md) | Ph?n t?ch 10 ph?n h?i v? ?ng d?ng ghi ch? ?? t?m v?n ?? ?u ti?n. |
-| [Ph?n t?ch ??i th?](phan_tich_doi_thu.md) | So s?nh ba ?ng d?ng qu?n l? c?ng vi?c theo d? li?u gi? v? t?nh n?ng ng??i d?ng cung c?p. |
-| [Thi?t k? th? nghi?m ? t??ng](kiem_chung_y_tuong.md) | Ki?m ch?ng d?ch v? nh?c l?ch cho c?a h?ng nh? trong 2 tu?n, ch?a c? d? li?u nhu c?u. |
+| [Phân tích nhu cầu khách hàng](phan_tich_khach_hang.md) | Phân tích mười phản hồi về ứng dụng ghi chú để tìm vấn đề ưu tiên. |
+| [Phân tích đối thủ](phan_tich_doi_thu.md) | So sánh ba ứng dụng quản lý công việc theo dữ liệu giá và tính năng cung cấp. |
+| [Thiết kế thử nghiệm ý tưởng](kiem_chung_y_tuong.md) | Kiểm chứng dịch vụ nhắc lịch cho cửa hàng nhỏ trong hai tuần, chưa có dữ liệu nhu cầu. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)

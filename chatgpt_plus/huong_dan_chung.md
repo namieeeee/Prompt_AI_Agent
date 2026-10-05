@@ -1,42 +1,47 @@
-# H??ng d?n d?ng chung trong ChatGPT
+# Hướng dẫn dùng chung trong ChatGPT
 
-## B?t ??u
-1. Ch?n nh?m t?c v? trong [danh m?c](../README.md).
-2. M? m?t file prompt, copy kh?i prompt v? thay ? `[?i?n]` b?ng y?u c?u th?c t?.
-3. D?n ho?c ??nh k?m d? li?u ?? ki?m tra kh?ng c? secrets. Ghi t?n file v? m?c ??ch s? d?ng.
-4. Ki?m tra c?u tr? l?i, b? sung d? li?u thi?u v? ph?n h?i ?i?m c?n s?a.
+## Bắt đầu
 
-Kh?ng c?n API ho?c runner ?? d?ng b? prompt n?y. ???ng d?n local kh?ng t? c?p quy?n ??c file; ch? xem l? ?? ??c khi n?i dung th?c s? ???c cung c?p v? truy c?p ???c. T?c v? t?m ki?m ch? c? ngu?n web th?c t? khi chat c? c?ng c? duy?t web v? ?? d?ng n?.
+1. Chọn nhóm tác vụ trong [danh mục](../README.md).
+2. Mở một file prompt, copy khối prompt và thay các ô `[điền]` bằng yêu cầu thực tế.
+3. Dán hoặc đính kèm dữ liệu đã kiểm tra không có secrets. Ghi tên file và mục đích sử dụng.
+4. Kiểm tra câu trả lời, bổ sung dữ liệu thiếu và phản hồi phần cần sửa.
 
-## M?u y?u c?u chung
+Không cần API hoặc runner. Đường dẫn local không tự cấp quyền đọc file; nội dung cần được cung cấp và thực sự truy cập được. Tìm kiếm chỉ có bằng chứng web khi chat có công cụ duyệt web và đã dùng nó.
+
+## Mẫu yêu cầu chung
+
 ```text
-M?c ti?u: [t?i c?n k?t qu? g?]
-B?i c?nh: [v? sao c?n, d?ng cho ai]
-D? li?u: [n?i dung ho?c file ?? cung c?p]
-R?ng bu?c: [?? d?i, th?i h?n, gi?ng v?n, ph?n ph?i gi?]
-??u ra: [b?ng, b?i vi?t, danh s?ch, JSON...]
-N?u thi?u th?ng tin quan tr?ng, h?i t?i ?a 3 c?u. Kh?ng b?a d? li?u ho?c ngu?n.
+Mục tiêu: [tôi cần kết quả gì]
+Bối cảnh: [vì sao cần, dùng cho ai]
+Dữ liệu: [nội dung hoặc file đã cung cấp]
+Ràng buộc: [độ dài, thời hạn, giọng văn, phần phải giữ]
+Đầu ra: [bảng, bài viết, danh sách, JSON...]
+Nếu thiếu thông tin quan trọng, hỏi tối đa 3 câu. Không bịa dữ liệu hoặc nguồn.
 ```
 
-## V? d? ??y ?? kh?ng c?n file ??nh k?m
+## Ví dụ đầy đủ
+
 ```text
-M?c ti?u: l?p l?ch t? h?c ti?ng Anh trong 4 tu?n.
-B?i c?nh: ng??i m?i, mu?n luy?n giao ti?p khi ?i du l?ch.
-D? li?u: t?i c? 30 ph?t m?i t?i, 5 t?i m?i tu?n; ch?a c? gi?o tr?nh.
-R?ng bu?c: d?ng t?i li?u mi?n ph?; kh?ng ??a URL ch?a x?c minh.
-??u ra: b?ng tu?n, ho?t ??ng, th?i l??ng, b?i th?c h?nh v? c?ch t? ki?m tra.
-N?u m?c ti?u qu? r?ng, ?? xu?t thu h?p v? gi?i th?ch l? do.
+Mục tiêu: lập lịch tự học tiếng Anh trong 4 tuần.
+Bối cảnh: người mới, muốn luyện giao tiếp khi đi du lịch.
+Dữ liệu: tôi có 30 phút mỗi tối, 5 tối mỗi tuần; chưa có giáo trình.
+Ràng buộc: tài liệu miễn phí; không đưa URL chưa xác minh.
+Đầu ra: bảng tuần, hoạt động, thời lượng, bài thực hành và cách tự kiểm tra.
+Nếu mục tiêu quá rộng, đề xuất thu hẹp và giải thích lý do.
 ```
 
-## Ph?n h?i ?? c?i thi?n k?t qu?
+## Phản hồi để cải thiện kết quả
+
 ```text
-Ph?n ??ng c?n gi?: [...]
-Ph?n c?n s?a: [...]
-Th?ng tin m?i: [...]
-H?y s?a ??ng c?c ph?n ??, gi? d? ki?n ?? x?c nh?n v? n?u ?i?m ch?a ch?c ch?n.
+Phần đúng cần giữ: [...]
+Phần cần sửa: [...]
+Thông tin mới: [...]
+Hãy sửa đúng các phần đó, giữ dữ kiện đã xác nhận và nêu điểm chưa chắc chắn.
 ```
 
-## B? code ?? c?
-[README Generator?Verifier](README.md) l? workflow ri?ng cho t?o code v? nghi?m thu. C?c nh?m kh?c d?ng tr?c ti?p theo t?c v?, kh?ng b?t bu?c lu?ng hai chat ho?c PASS/FAIL/BLOCKED.
+## Bộ code đã có
 
-M?c h? tr? file/c?ng c? ph? thu?c m?i tr??ng chat hi?n c?. Ch?a th? nghi?m b? prompt tr?n model online; ng??i d?ng ki?m tra ??u ra tr??c khi ?p d?ng.
+[README Generator–Verifier](README.md) là workflow riêng cho tạo code và nghiệm thu. Nhóm khác dùng trực tiếp theo tác vụ, không bắt buộc hai chat hoặc PASS/FAIL/BLOCKED.
+
+Mức hỗ trợ file/công cụ phụ thuộc môi trường chat. Chưa thử nghiệm bộ prompt trên model online; kiểm tra đầu ra trước khi áp dụng.

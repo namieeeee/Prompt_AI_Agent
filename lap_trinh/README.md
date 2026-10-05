@@ -1,13 +1,13 @@
-# L?p tr?nh v? review code
+# Lập trình và review code
 
-Ch?n prompt theo vi?c c?n l?m, copy kh?i `Prompt ?? copy`, ?i?n ??u v?o v? g?i c?ng d? li?u li?n quan. ? kh?ng ?p d?ng ghi r? `kh?ng ?p d?ng`; thi?u d? li?u quan tr?ng th? AI c?n h?i th?m.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
 
-| Prompt | T?nh hu?ng minh h?a |
+| Prompt | Tình huống minh họa |
 |---|---|
-| [T?o ho?c s?a code theo task](tao_sua_code.md) | S?a h?m ??c CSV ?? x? l? d?ng tr?ng; g?i h?m hi?n t?i v? behavior mong mu?n. |
-| [Ch?n ?o?n l?i code](debug.md) | API tr? 500 ? request c? th?; g?i traceback ?? che d? li?u nh?y c?m v? handler. |
-| [Review code v? ?? xu?t test](review_test.md) | Review h?m ph?n quy?n v?i c?c vai tr? admin/user v? ?? xu?t test cho tr??ng h?p b? t? ch?i. |
+| [Tạo hoặc sửa code theo task](tao_sua_code.md) | Sửa hàm đọc CSV để xử lý dòng trống; gửi hàm và behavior mong muốn. |
+| [Chẩn đoán lỗi code](debug.md) | API trả 500 ở request cụ thể; gửi traceback đã che dữ liệu nhạy cảm và handler. |
+| [Review code và đề xuất test](review_test.md) | Review hàm phân quyền admin/user, đề xuất test trường hợp từ chối. |
 
-Kh?ng g?i secrets ho?c d? li?u c? nh?n kh?ng c?n thi?t. Ki?m tra ngu?n, ph?p t?nh v? th?ng tin c?n thi?u tr??c khi d?ng k?t qu?. C?c prompt ch?a ???c th? nghi?m h?nh vi tr?n model online.
+Không gửi secrets hoặc dữ liệu cá nhân không cần thiết. Kiểm tra nguồn, phép tính và thông tin còn thiếu trước khi dùng kết quả. Chưa thử nghiệm hành vi trên model online.
 
-[Tr? v? danh m?c](../README.md)
+[Trở về danh mục](../README.md)
