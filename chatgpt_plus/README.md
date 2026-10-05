@@ -19,7 +19,8 @@ chatgpt_plus/
 ├── verifier.prompt.md
 ├── retry.prompt.md
 ├── task_template.md
-└── review_packet_template.md
+├── review_packet_template.md
+└── huong_dan_chung.md
 ```
 
 ## Cách dùng nhanh nhất — chỉ nghiệm thu
@@ -30,7 +31,7 @@ chatgpt_plus/
 5. Verifier trả PASS/FAIL/BLOCKED. Nếu thiếu dữ liệu, bổ sung đúng dữ liệu còn thiếu.
 6. Bạn đối chiếu findings với source local, chạy lại test và tự quyết định nghiệm thu.
 
-Dùng checklist ở `../config/checklist.json` làm điểm khởi đầu nếu phù hợp; phải sửa/chốt criteria theo dự án.
+Dùng [checklist mẫu](../prompt_library/config/checklist.json) làm điểm khởi đầu nếu phù hợp; phải chốt criteria theo dự án. Checklist mẫu là dữ liệu tham khảo, không tự cấp quyền sửa source/workflow chứa nó.
 Không upload config chứa API keys, .env, keyfiles, dữ liệu tài khoản hay logs production.
 Giới hạn file/context phụ thuộc tài khoản; chia task nhỏ nếu source quá lớn, không coi phần chưa đọc là đã PASS.
 
@@ -82,7 +83,7 @@ Kết quả bạn cung cấp là user-provided evidence, không phải test mà 
 Nếu ChatGPT chạy test trong môi trường riêng, phải phân biệt môi trường đó với Windows/local project của bạn.
 
 ## Kiểm chứng bộ prompt
-Đã kiểm tra file và liên kết nội bộ; chưa chạy đánh giá hành vi bằng chat/model online.
+Đã review file, liên kết và scenario tĩnh theo [báo cáo audit](../docs/PROMPT_AUDIT.md); chưa chạy evaluation thực nghiệm bằng nhiều model online.
 Prompt không có runner/parser enforce JSON như pipeline API. Mức tuân thủ phải được người dùng kiểm tra.
 
 ## Tài liệu chính thức

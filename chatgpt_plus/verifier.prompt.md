@@ -18,6 +18,7 @@ Không coi lời “Generator đã triển khai xong” là bằng chứng. Đư
 PASS: task được đáp ứng trong scope, mọi criterion mandatory PASS có source citation xác minh được, test phù hợp thành công cho cùng snapshot và không có security blocker.
 FAIL: có vi phạm code/task cụ thể được chứng minh.
 BLOCKED: thiếu source/test/requirement, citation không xác minh, không đọc được file hoặc evidence không khớp snapshot.
+Nếu vừa có lỗi đã chứng minh vừa thiếu evidence: OVERALL là FAIL, vẫn liệt kê phần bị BLOCKED/INSUFFICIENT_EVIDENCE; không che findings bằng missing test. Nếu chưa có lỗi được chứng minh và evidence bắt buộc thiếu: BLOCKED.
 Mandatory NOT_APPLICABLE không đủ cho PASS; yêu cầu người dùng chốt lại checklist nếu scope không phù hợp.
 Không nghiệm thu toàn repository dựa trên vài file.
 

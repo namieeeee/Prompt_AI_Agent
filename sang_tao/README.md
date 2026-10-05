@@ -1,6 +1,6 @@
 # Ý tưởng và kể chuyện
 
-Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Ô không áp dụng ghi rõ `không áp dụng`; thiếu dữ liệu quan trọng thì AI cần hỏi thêm.
+Chọn prompt theo việc cần làm, copy khối `Prompt để copy`, điền đầu vào và gửi cùng dữ liệu liên quan. Điền input bắt buộc; các ô tùy chọn có thể bỏ. Prompt có mặc định hoặc chỉ dẫn tự xác định context; AI chỉ cần hỏi khi phần thiếu có thể đổi kết quả.
 
 | Prompt | Tình huống minh họa |
 |---|---|

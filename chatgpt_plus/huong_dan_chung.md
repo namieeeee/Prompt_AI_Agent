@@ -17,7 +17,7 @@ Bối cảnh: [vì sao cần, dùng cho ai]
 Dữ liệu: [nội dung hoặc file đã cung cấp]
 Ràng buộc: [độ dài, thời hạn, giọng văn, phần phải giữ]
 Đầu ra: [bảng, bài viết, danh sách, JSON...]
-Nếu thiếu thông tin quan trọng, hỏi tối đa 3 câu. Không bịa dữ liệu hoặc nguồn.
+Tự xác định từ dữ liệu/tool được phép trước khi hỏi. Chỉ hỏi khi thiếu thông tin làm đổi kết quả; thiếu chi tiết phụ dùng mặc định ghi rõ và làm phần hữu ích. Không bịa dữ liệu, nguồn hoặc kết quả công cụ.
 ```
 
 ## Ví dụ đầy đủ
@@ -44,4 +44,4 @@ Hãy sửa đúng các phần đó, giữ dữ kiện đã xác nhận và nêu 
 
 [README Generator–Verifier](README.md) là workflow riêng cho tạo code và nghiệm thu. Nhóm khác dùng trực tiếp theo tác vụ, không bắt buộc hai chat hoặc PASS/FAIL/BLOCKED.
 
-Mức hỗ trợ file/công cụ phụ thuộc môi trường chat. Chưa thử nghiệm bộ prompt trên model online; kiểm tra đầu ra trước khi áp dụng.
+Mức hỗ trợ file/công cụ phụ thuộc môi trường chat. Đã review tĩnh/scenario theo [báo cáo audit](../docs/PROMPT_AUDIT.md); chưa thử nghiệm hành vi trên nhiều model online. Kiểm tra đầu ra trước khi áp dụng.
