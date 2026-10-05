@@ -1,6 +1,6 @@
 # Thư viện prompt AI
 
-Thư viện prompt tiếng Việt cho tìm kiếm, phân tích, học tập, viết nội dung, công việc, kinh doanh, sáng tạo, lập trình, dịch thuật, xử lý tài liệu và ra quyết định.
+Thư viện prompt tiếng Việt cho tìm kiếm, phân tích, học tập, viết nội dung, công việc, kinh doanh, sáng tạo, lập trình, ngoại ngữ, dịch thuật, xử lý tài liệu và ra quyết định.
 
 ## Chọn tác vụ
 
@@ -14,7 +14,8 @@ Thư viện prompt tiếng Việt cho tìm kiếm, phân tích, học tập, vi�
 | [cong_viec](cong_viec/README.md) | Lập kế hoạch và báo cáo công việc: 3 prompt |
 | [kinh_doanh](kinh_doanh/README.md) | Phân tích kinh doanh và sản phẩm: 3 prompt |
 | [sang_tao](sang_tao/README.md) | Ý tưởng và kể chuyện: 3 prompt |
-| [lap_trinh](lap_trinh/README.md) | Lập trình và kiểm tra code: 3 prompt |
+| [lap_trinh](lap_trinh/README.md) | Lập trình: 3 prompt chung + 14 prompt theo chuyên môn |
+| [ngoai_ngu](ngoai_ngu/README.md) | Tiếng Anh kỹ thuật và tiếng Nhật: 4 prompt |
 | [dich_thuat](dich_thuat/README.md) | Dịch thuật và hiệu đính: 3 prompt |
 | [tai_lieu](tai_lieu/README.md) | Đọc và xử lý tài liệu: 3 prompt |
 | [ra_quyet_dinh](ra_quyet_dinh/README.md) | So sánh và lựa chọn: 3 prompt |
@@ -47,6 +48,8 @@ Mỗi prompt cần mục đích rõ, ô điền dễ hiểu, kết quả mong mu
 
 ## Trạng thái kiểm chứng
 
-Danh mục cơ bản gồm 33 prompt tác vụ, 7 file hướng dẫn/prompt/mẫu trong `chatgpt_plus/`, 12 README nhóm và README gốc. Nội dung đã được đọc lại và kiểm tra cấu trúc/liên kết; chưa thử nghiệm so sánh trên nhiều model. Bạn vẫn cần kiểm tra kết quả trước khi dùng.
+Danh mục cơ bản gồm 51 prompt tác vụ, 7 file hướng dẫn/prompt/mẫu trong `chatgpt_plus/`, 20 README nhóm và README gốc. Nội dung đã được đọc lại và kiểm tra cấu trúc/liên kết; chưa thử nghiệm so sánh trên nhiều model. Bạn vẫn cần kiểm tra kết quả trước khi dùng.
 
 [Báo cáo audit trước lần giản lược](docs/PROMPT_AUDIT.md) lưu đánh giá của phiên bản trước, không phải hướng dẫn sử dụng hiện tại.
+
+[Đánh giá đề xuất mở rộng code và ngoại ngữ](docs/DE_XUAT_CODE_NGOAI_NGU_REVIEW.md) giải thích phạm vi đợt bổ sung đầu và các mục dùng lại thay vì tạo trùng.
