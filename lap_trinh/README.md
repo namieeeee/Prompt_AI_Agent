@@ -1,27 +1,26 @@
-# Lập trình và kiểm tra code
+# Phân hệ Kỹ thuật Lập trình và Kỹ nghệ Mã nguồn Doanh nghiệp (Enterprise Software Engineering)
 
-Chọn prompt theo việc cần làm, copy khối `Prompt để copy` và thay các ô trong ngoặc vuông. Đọc phần `Cách dùng` để biết cần cung cấp gì; ô tùy chọn có thể bỏ.
+Thư mục cung cấp các mẫu prompt kỹ thuật chuẩn công nghiệp dành cho Staff/Senior Software Engineer, Tech Lead, SRE và Architect: phát triển tính năng, tái cấu trúc mã nguồn (Refactoring), chẩn đoán sự cố hệ thống phân tán, kiểm toán bảo mật (Security Audit) và thiết kế hệ thống chuyên sâu theo các domain.
 
-| Prompt | Tình huống minh họa |
+## Nhóm Prompt Cốt lõi (Core Engineering Prompts)
+
+| Tên Prompt | Cấp độ | Khi nào sử dụng |
+|---|---|---|
+| [Thiết kế và Tái cấu trúc Mã nguồn Doanh nghiệp](tao_sua_code.md) | Nền tảng | Xây dựng tính năng mới hoặc tái cấu trúc module hiện hữu theo nguyên lý Clean Code, SOLID, Design Patterns, an toàn luồng và đầy đủ Unit Tests. |
+| [Chẩn đoán và Xử lý Sự cố Mã nguồn Doanh nghiệp](debug.md) | Xử lý sự cố | Chẩn đoán nguyên nhân gốc rễ (RCA) các sự cố nghiêm trọng: Crash, Memory Leak, Deadlock, Race Condition, Connection Exhaustion trong môi trường phân tán. |
+| [Kiểm định Toàn diện Mã nguồn và Bảo mật](review_test.md) | Kiểm soát chất lượng | Đánh giá Pull Request theo chuẩn OWASP Top 10, CWE, phát hiện code smells, phân tích độ phức tạp thuật toán và sinh bộ kiểm thử tự động. |
+
+---
+
+## Các Phân nhánh Chuyên môn (Specialized Engineering Stacks)
+
+| Phân nhánh | Phạm vi chuyên môn |
 |---|---|
-| [Tạo hoặc sửa code](tao_sua_code.md) | Sửa hàm đọc CSV để xử lý dòng trống; gửi hàm và kết quả mong muốn. |
-| [Chẩn đoán lỗi code](debug.md) | API trả 500 ở request cụ thể; gửi traceback đã che dữ liệu nhạy cảm và handler. |
-| [Kiểm tra code và đề xuất kiểm thử](review_test.md) | Kiểm tra hàm phân quyền admin/user, đề xuất kiểm thử trường hợp từ chối. |
+| **[Backend .NET & Cloud Services](backend/README.md)** | Thiết kế kiến trúc Clean Architecture / DDD, kiểm định xác thực JWT & chống IDOR, chẩn đoán lỗi Web API & Database. |
+| **[Frontend React / Next.js](frontend/README.md)** | Thiết kế Component chuẩn Server/Client boundary (RSC), tích hợp API end-to-end type-safe, chẩn đoán Hydration Mismatch & Web Vitals. |
+| **[Lập trình Nhúng Vi Điều Khiển C/C++](embedded/README.md)** | Bóc tách Datasheet/TRM, chẩn đoán ngoại vi I2C/SPI, kiểm định an toàn bộ nhớ theo chuẩn MISRA C:2012/2023. |
+| **[Python Tools & Automation](python_tools/README.md)** | Phát triển công cụ dòng lệnh (CLI Utility) chuẩn POSIX và kịch bản tự động hóa ETL/Batch xử lý song song, an toàn chạy lại (Idempotency). |
+| **[AI Pair Programming & Architecture Onboarding](ai_coding/README.md)** | Khảo sát kiến trúc repo khi mới tiếp nhận (Onboarding), đồng hành triển khai User Story từng bước, giải mã mô hình tư duy và cơ chế runtime sâu. |
 
-Không gửi mật khẩu, khóa bí mật hoặc dữ liệu riêng tư không cần thiết. Kiểm tra lại kết quả trước khi sử dụng.
-
-## Theo chuyên môn
-
-Các mẫu dưới đây vẫn dùng độc lập bằng cách copy/paste. Chọn khi cần thêm ngữ cảnh chuyên môn; không cần đi qua mọi nhóm.
-
-| Nhóm | Khi nào chọn |
-|---|---|
-| [Học và làm code cùng AI](ai_coding/README.md) | Hiểu repo, thêm tính năng, học từ code; dùng lại prompt debug/review chung |
-| [Backend .NET](backend/README.md) | Thiết kế tính năng, JWT/phân quyền, chẩn đoán lỗi API |
-| [Frontend React/Next.js](frontend/README.md) | Component, kết nối API, chẩn đoán giao diện |
-| [Embedded C/C++](embedded/README.md) | Đọc datasheet, debug firmware, kiểm tra code nhúng |
-| [Python làm công cụ](python_tools/README.md) | CLI và tự động hóa công việc |
-
-Nhóm lập trình có 17 prompt: 3 prompt chung và 14 prompt chuyên môn. Đọc/viết tài liệu bằng ngoại ngữ xem [tiếng Anh và tiếng Nhật](../ngoai_ngu/README.md).
-
-[Trở về danh mục](../README.md)
+---
+[Trở về Danh mục gốc](../README.md)

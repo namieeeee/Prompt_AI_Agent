@@ -1,13 +1,21 @@
-# So sánh và lựa chọn
+# Phân hệ Ra Quyết định Chiến lược và Quản trị Rủi ro Doanh nghiệp (Enterprise Decision Making & Risk Governance)
 
-Chọn prompt theo việc cần làm, copy khối `Prompt để copy` và thay các ô trong ngoặc vuông. Đọc phần `Cách dùng` để biết cần cung cấp gì; ô tùy chọn có thể bỏ.
+Thư mục cung cấp các mẫu prompt chuẩn mực quốc tế dành cho Ban Giám đốc (C-Suite), Giám đốc Quản trị Rủi ro (CRO), Solution Architect, Hội đồng Thẩm định và Project Director: so sánh đa tiêu chí có trọng số (MCDA), đánh giá rủi ro theo chuẩn ISO 31000, và thử nghiệm tiền thất bại (Pre-Mortem Analysis) trước khi cam kết nguồn lực.
 
-| Prompt | Tình huống minh họa |
-|---|---|
-| [So sánh các phương án](so_sanh_phuong_an.md) | So sánh học buổi tối và cuối tuần theo lịch, chi phí, mức năng lượng. |
-| [Đánh giá rủi ro một lựa chọn](danh_gia_rui_ro.md) | Đánh giá rủi ro chuyển công cụ quản lý công việc cho nhóm tám người, chưa có kế hoạch chuyển dữ liệu. |
-| [Kiểm tra một quyết định trước khi chốt](kiem_tra_quyet_dinh.md) | Kiểm tra quyết định thuê văn phòng mới theo chi phí và nhu cầu cung cấp. |
+## Danh mục Prompt
 
-Không gửi mật khẩu, khóa bí mật hoặc dữ liệu riêng tư không cần thiết. Kiểm tra lại kết quả trước khi sử dụng.
+| Tên Prompt | Cấp độ | Khi nào sử dụng |
+|---|---|---|
+| [Phân tích Đa Tiêu chí & Ma trận Quyết định (MCDA)](so_sanh_phuong_an.md) | Chiến lược - Lựa chọn | Lập ma trận chấm điểm có trọng số so sánh các phương án (Vendor Selection, Build vs Buy, Tech Stack), phân tích đánh đổi TCO 3 năm và độ nhạy quyết định. |
+| [Đánh giá & Quản trị Rủi ro theo chuẩn ISO 31000](danh_gia_rui_ro.md) | Quản trị rủi ro - Tuân thủ | Đánh giá rủi ro đa chiều trên ma trận nhiệt 5x5, phân tích Rủi ro Vốn có vs Rủi ro Còn lại, áp dụng chiến lược 4T và lập Sổ đăng ký rủi ro (Risk Register). |
+| [Thử nghiệm Tiền Thất bại & Kiểm toán Quyết định](kiem_tra_quyet_dinh.md) | Thẩm định cuối - Phòng vệ | Áp dụng phương pháp Pre-Mortem giả định dự án đã thất bại sau 12 tháng, kiểm toán thiên lệch nhận thức (Overconfidence, Sunk Cost) và thiết lập ngưỡng dừng (Circuit Breaker). |
 
-[Trở về danh mục](../README.md)
+---
+
+## Mối liên hệ với các Phân hệ Khác
+
+- Kết hợp với **[Phân tích Lập luận & Phản biện](../phan_tich/phan_bien_lap_luan.md)** để bảo vệ quyết định trước các phiên chất vấn của Hội đồng Quản trị.
+- Kết hợp với **[Lập Kế hoạch Triển khai Dự án](../cong_viec/lap_ke_hoach.md)** sau khi quyết định đã được ký duyệt chính thức.
+
+---
+[Trở về Danh mục gốc](../README.md)

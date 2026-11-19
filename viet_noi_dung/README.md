@@ -1,13 +1,21 @@
-# Viết và biên tập nội dung
+# Phân hệ Soạn thảo Văn bản và Truyền thông Doanh nghiệp (Enterprise Corporate Communications & Content Engineering)
 
-Chọn prompt theo việc cần làm, copy khối `Prompt để copy` và thay các ô trong ngoặc vuông. Đọc phần `Cách dùng` để biết cần cung cấp gì; ô tùy chọn có thể bỏ.
+Thư mục cung cấp các mẫu prompt chuẩn mực quốc tế dành cho Ban Giám đốc, Chuyên viên Truyền thông (PR/MarCom), Solution Architect, Tech Lead và Quản lý Vận hành: soạn thảo email điều hành & leo thang sự cố (Executive Escalation), biên soạn bài viết chuyên gia & tài liệu kỹ thuật (Thought Leadership & Whitepapers), và hiệu đính văn phong doanh nghiệp loại bỏ sáo rỗng.
 
-| Prompt | Tình huống minh họa |
-|---|---|
-| [Viết bài theo yêu cầu](viet_bai.md) | Viết bài 500 từ hướng dẫn người mới quản lý công việc, dễ hiểu, không có số liệu thiếu nguồn. |
-| [Soạn email](viet_email.md) | Email xin dời họp sang chiều thứ Sáu theo lịch người dùng cung cấp. |
-| [Chỉnh văn phong](chinh_van_phong.md) | Chỉnh báo cáo công việc cho ngắn, rõ, lịch sự; giữ số liệu và tên sản phẩm. |
+## Danh mục Prompt
 
-Không gửi mật khẩu, khóa bí mật hoặc dữ liệu riêng tư không cần thiết. Kiểm tra lại kết quả trước khi sử dụng.
+| Tên Prompt | Cấp độ | Khi nào sử dụng |
+|---|---|---|
+| [Soạn thảo Thư tín Doanh nghiệp & Leo thang Điều hành](viet_email.md) | Điều hành - Giao tiếp | Soạn email quan trọng theo mô hình BLUF (Bottom Line Up Front): báo cáo sự cố khẩn cấp, đàm phán hợp đồng, đề xuất ngân sách có Call-To-Action dứt khoát. |
+| [Soạn thảo Bài viết Chuyên gia & Tài liệu Kỹ thuật](viet_bai.md) | Chuyên gia - Xuất bản | Biên soạn bài viết kỹ thuật chuyên sâu (Engineering Blog, Case Study, Whitepaper) theo cấu trúc Vấn đề - Giải pháp - Tác động (Problem-Solution-Impact). |
+| [Hiệu đính Văn phong Doanh nghiệp & Chuẩn hóa](chinh_van_phong.md) | Biên tập - Thương hiệu | Cắt tỉa văn bản dài dòng sáo rỗng, chuyển đổi sang thể chủ động sắc bén, chuẩn hóa giọng văn theo cẩm nang thương hiệu và bảo vệ an toàn pháp lý. |
 
-[Trở về danh mục](../README.md)
+---
+
+## Mối liên hệ với các Phân hệ Khác
+
+- Kết hợp với **[Tóm tắt Tài liệu Điều hành](../tai_lieu/tom_tat.md)** để chuyển đổi báo cáo kỹ thuật dài thành email vắn tắt gửi C-Level.
+- Kết hợp với **[Dịch thuật Chuyên ngành](../dich_thuat/README.md)** khi cần xuất bản thông điệp ra thị trường quốc tế.
+
+---
+[Trở về Danh mục gốc](../README.md)

@@ -1,27 +1,44 @@
-# Luyện tập có phản hồi
+# Huấn luyện Kỹ thuật và Phỏng vấn Hệ thống Tương tác (Interactive Socratic Technical Coaching & Interview Prep)
 
-## Mục đích
+## Mục đích & Phạm vi áp dụng
 
-Dùng khi muốn làm từng bài và được góp ý sau mỗi câu trả lời.
+Dành cho Kỹ sư Phần mềm, System Architect và Tech Lead rèn luyện tư duy giải quyết vấn đề và chuẩn bị cho các vòng phỏng vấn kỹ thuật cấp cao (System Design Interview, Coding Architecture Interview, Incident Troubleshooting): huấn luyện tương tác theo phương pháp đối thoại Socrates (Socratic Method), giải quyết từng bước các bài toán hóc búa, nhận phản biện khắt khe và chấm điểm năng lực theo rubric của các tập đoàn công nghệ lớn.
 
-## Cách dùng
+## Thông tin cần chuẩn bị
 
-Điền kỹ năng; trình độ, dạng bài và số câu có thể bỏ. Copy khối dưới đây và thay các ô trong ngoặc vuông.
+- [Bắt buộc: chủ đề hoặc dạng bài toán muốn luyện tập (System Design, Thuật toán, Khắc phục sự cố phân tán)]
+- [Bắt buộc: cấp độ phỏng vấn / kinh nghiệm mục tiêu (Senior, Staff, Principal Engineer)]
+- [Tùy chọn: các ràng buộc hoặc tiêu chí đánh giá đặc thù của công ty mục tiêu (Google, Meta, Amazon)]
+
+## Quy trình thực thi & Hướng dẫn sử dụng
+
+1. Điền chủ đề và cấp độ muốn thử thách vào khối `Prompt để copy`.
+2. Chạy prompt trên AI để bắt đầu phiên phỏng vấn tương tác 1-1.
+3. Trả lời từng bước (Làm rõ yêu cầu -> Thiết kế tổng quan -> Đi sâu từng component -> Xử lý trường hợp biên) và tiếp thu phản hồi chấm điểm từ AI.
 
 ## Prompt để copy
 
 ```text
-Hãy cùng tôi luyện kỹ năng sau, từng câu một.
-Môn/kỹ năng: [điền]
-Trình độ và mục tiêu: [tùy chọn]
-Dạng bài: [tùy chọn]
-Số câu: [tùy chọn; mặc định 3]
+Bạn là Principal Bar Raiser Interviewer kiêm Distinguished Systems Architect tại tập đoàn công nghệ lớn. Hãy đóng vai trò người phỏng vấn / huấn luyện viên kỹ thuật khắt khe để cùng tôi thực hiện một phiên phỏng vấn System Design / Kỹ thuật chuyên sâu tương tác 1-1 dưới đây.
 
-Đưa một bài ở lượt đầu, chưa tiết lộ đáp án; nếu chưa biết trình độ, bắt đầu dễ.
-Chờ tôi trả lời rồi nêu phần đúng, phần cần sửa và lý do. Chấp nhận cách giải khác nếu đúng; không chấm khi tôi chưa trả lời. Nếu tôi muốn tự sửa, đưa gợi ý trước lời giải.
-Điều chỉnh độ khó theo kết quả. Dừng khi đủ số câu hoặc tôi yêu cầu, rồi tổng kết ngắn những điểm cần luyện thêm.
+Chủ đề luyện tập & Dạng bài toán:
+[Bắt buộc: ví dụ: Thiết kế hệ thống Đặt xe công nghệ (Ride-sharing như Uber/Grab) chịu tải 100,000 requests/s; Thiết kế dịch vụ rút gọn link có phân tích click thời gian thực; Chẩn đoán sự cố mạng phân tán]
+
+Cấp độ mục tiêu & Vị trí ứng tuyển:
+[Bắt buộc: Senior / Staff / Principal Software Engineer]
+
+Quy tắc điều phối phiên phỏng vấn tương tác:
+1. Bạn sẽ đóng vai trò người phỏng vấn: Đưa ra đề bài ban đầu ngắn gọn và CHỜ tôi đặt câu hỏi làm rõ phạm vi (Scope & Functional / Non-functional Requirements).
+2. Sau mỗi câu trả lời hoặc đề xuất thiết kế của tôi, bạn sẽ:
+   - **Đánh giá ngắn gọn**: Điểm mạnh và điểm yếu chết người trong thiết kế vừa nêu.
+   - **Đặt câu hỏi chất vấn sâu sắc (Socratic Question)**: Ép tôi vào các tình huống góc chết (Edge cases, Network Partition, Data Inconsistency, Thundering Herd, Hardware failure) để kiểm tra độ sâu tư duy.
+   - **Chờ tôi phản hồi** trước khi đi tiếp.
+3. Tuyệt đối KHÔNG tự viết toàn bộ giải pháp ngay từ đầu; phiên làm việc phải là một cuộc đối thoại kỹ thuật hai chiều thực tế kéo dài qua nhiều lượt trao đổi.
+4. Cuối phiên phỏng vấn (khi tôi yêu cầu tổng kết), bạn sẽ cung cấp bảng chấm điểm chi tiết (Scorecard) theo 4 tiêu chí: Năng lực cấu trúc bài toán, Độ sâu kiến trúc hệ thống, Giao tiếp kỹ thuật, và Khả năng xử lý đánh đổi (Trade-offs).
+
+Hãy bắt đầu ngay bằng việc đưa ra đề bài phỏng vấn đầu tiên của bạn!
 ```
 
-## Ví dụ sử dụng
+## Kịch bản & Ví dụ thực tế
 
-Luyện năm câu tiếng Anh A2, tập thì quá khứ, từng câu một.
+Phiên phỏng vấn thử thách thiết kế "Hệ thống Streaming Thông báo thời gian thực đa nền tảng (Notification Service) phục vụ 50 triệu người dùng hoạt động hàng ngày, đảm bảo không mất tin nhắn và có độ trễ dưới 500ms".

@@ -1,13 +1,21 @@
-# Đọc và xử lý tài liệu
+# Phân hệ Xử lý Tài liệu và Trí tuệ Văn bản Doanh nghiệp (Enterprise Document Intelligence & Processing)
 
-Chọn prompt theo việc cần làm, copy khối `Prompt để copy` và thay các ô trong ngoặc vuông. Đọc phần `Cách dùng` để biết cần cung cấp gì; ô tùy chọn có thể bỏ.
+Thư mục cung cấp các mẫu prompt kỹ thuật chuẩn công nghiệp dành cho Pháp chế (Legal), Kiểm toán viên, Kế toán trưởng, Business Analyst và Giám đốc Điều hành: trích xuất dữ liệu có cấu trúc (JSON Schema/Bảng biểu có citation), tóm tắt tài liệu điều hành (Executive Briefing Memo), và hỏi đáp thẩm tra tài liệu pháp lý/kỹ thuật với nguyên tắc căn cứ nguồn gốc tuyệt đối.
 
-| Prompt | Tình huống minh họa |
-|---|---|
-| [Tóm tắt tài liệu](tom_tat.md) | Tóm tắt báo cáo đính kèm thành năm ý, liệt kê giới hạn của báo cáo. |
-| [Trích xuất dữ liệu có cấu trúc](trich_xuat.md) | Trích hạng mục, thời hạn, người phụ trách từ biên bản; chỗ thiếu ghi chưa có thông tin. |
-| [Hỏi đáp dựa trên tài liệu](hoi_dap.md) | Theo quy trình đính kèm, ai duyệt yêu cầu và khi nào cần duyệt bổ sung? |
+## Danh mục Prompt
 
-Không gửi mật khẩu, khóa bí mật hoặc dữ liệu riêng tư không cần thiết. Kiểm tra lại kết quả trước khi sử dụng.
+| Tên Prompt | Cấp độ | Khi nào sử dụng |
+|---|---|---|
+| [Trích xuất Dữ liệu Cấu trúc Chuẩn hóa](trich_xuat.md) | Khai phá dữ liệu | Trích xuất các trường thông tin từ hợp đồng, hóa đơn, báo cáo tài chính ra JSON Schema hoặc bảng biểu chuẩn có dẫn chứng số trang/điều khoản. |
+| [Tóm tắt Tài liệu Điều hành Doanh nghiệp](tom_tat.md) | Tổng hợp chiến lược | Chuyển đổi tài liệu dài hàng chục trang thành bản tóm tắt điều hành 1 trang (One-pager Memo): làm nổi bật quyết định, rủi ro, nghĩa vụ và chi phí. |
+| [Thẩm tra & Hỏi đáp Tài liệu Chuẩn xác](hoi_dap.md) | Thẩm định tuân thủ | Trả lời câu hỏi dựa 100% vào tài liệu cung cấp, bắt buộc trích dẫn nguyên văn số trang/điều khoản, phân định dữ kiện vs suy luận, không ảo giác. |
 
-[Trở về danh mục](../README.md)
+---
+
+## Mối liên hệ với các Phân hệ Khác
+
+- Kết hợp với **[Phân tích Thống kê Dữ liệu](../phan_tich/phan_tich_du_lieu.md)** sau khi đã trích xuất bảng số liệu từ báo cáo PDF.
+- Kết hợp với **[Kiểm tra Quyết định & Đánh giá Rủi ro](../ra_quyet_dinh/README.md)** đối với các hợp đồng thương mại lớn.
+
+---
+[Trở về Danh mục gốc](../README.md)

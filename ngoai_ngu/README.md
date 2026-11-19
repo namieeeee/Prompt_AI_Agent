@@ -1,14 +1,13 @@
-# Ngoại ngữ qua tình huống thực tế
+# Phân hệ Ngoại ngữ Kỹ thuật và Giao tiếp Doanh nghiệp Quốc tế (Enterprise Technical Languages)
 
-Các prompt giải thích bằng tiếng Việt, giúp học qua tài liệu và công việc. Copy mẫu rồi điền mục tiêu/đoạn văn; chưa biết mức chứng chỉ vẫn dùng được.
+Thư mục cung cấp các mẫu prompt chuyên sâu dành cho Kỹ sư Phần mềm, Tech Lead, BrSE và Quản lý làm việc trong các tập đoàn công nghệ toàn cầu: thành thạo tiếng Anh kỹ thuật (Technical English) và tiếng Nhật IT thương mại (Business IT Japanese).
 
-| Nhóm | Nội dung |
+## Danh mục Phân nhánh
+
+| Phân nhánh | Phạm vi chuyên môn |
 |---|---|
-| [Tiếng Anh](english/README.md) | 2 prompt: đọc tài liệu kỹ thuật và viết nội dung cho developer |
-| [Tiếng Nhật](japanese/README.md) | 2 prompt: buổi học giao tiếp ngắn và tiếng Nhật kỹ thuật |
+| **[Tiếng Anh Kỹ thuật Doanh nghiệp](english/README.md)** | Soạn thảo Git Commits chuẩn Conventional Commits, Pull Request Descriptions, Bug Reports, và giải mã chuẩn RFC/IETF, Whitepapers. |
+| **[Tiếng Nhật Dự án IT & BrSE](japanese/README.md)** | Đọc hiểu tài liệu thiết kế (Shiyosho), báo cáo theo chuẩn văn hóa Horenso, sử dụng kính ngữ thương mại (Keigo) và mô phỏng giao tiếp thực chiến. |
 
-Đợt đầu có 4 prompt. Nếu chỉ cần bản dịch, dùng [Dịch thuật](../dich_thuat/README.md). Để lập kế hoạch học dài hơn hoặc luyện kỹ năng chung, dùng [Học tập](../hoc_tap/README.md).
-
-Chat chữ không đo khả năng nghe/phát âm; phản hồi học tập không phải chứng chỉ. Gửi đoạn tài liệu đọc được và bỏ dữ liệu công việc riêng tư không cần thiết.
-
-[Trở về danh mục](../README.md)
+---
+[Trở về Danh mục gốc](../README.md)

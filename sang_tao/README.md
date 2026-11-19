@@ -1,13 +1,21 @@
-# Ý tưởng và kể chuyện
+# Phân hệ Sáng tạo, Kể chuyện và Đổi mới Tư duy Doanh nghiệp (Enterprise Creative Ideation & Storytelling)
 
-Chọn prompt theo việc cần làm, copy khối `Prompt để copy` và thay các ô trong ngoặc vuông. Đọc phần `Cách dùng` để biết cần cung cấp gì; ô tùy chọn có thể bỏ.
+Thư mục cung cấp các mẫu prompt chuẩn mực quốc tế dành cho Giám đốc Đổi mới sáng tạo (Chief Innovation Officer), Giám đốc Thương hiệu (Brand Director), Biên kịch, UX Researcher và Creative Lead: động não đổi mới tư duy theo khung SCAMPER và ma trận Impact vs Feasibility, xây dựng câu chuyện thương hiệu theo Hành trình Người Hùng (Hero's Journey), và thiết kế hồ sơ nhân vật/chân dung người dùng đa chiều.
 
-| Prompt | Tình huống minh họa |
-|---|---|
-| [Tạo ý tưởng đa dạng](tao_y_tuong.md) | Tạo tám ý tưởng video học Python cho người mới, mỗi video dưới ba phút. |
-| [Viết câu chuyện](viet_cau_chuyen.md) | Truyện 800 từ về người sửa đồng hồ tìm thấy thông điệp từ tương lai. |
-| [Xây dựng nhân vật](xay_dung_nhan_vat.md) | Kỹ sư trẻ trong truyện khoa học viễn tưởng, sợ thất bại nhưng muốn cứu nhóm. |
+## Danh mục Prompt
 
-Không gửi mật khẩu, khóa bí mật hoặc dữ liệu riêng tư không cần thiết. Kiểm tra lại kết quả trước khi sử dụng.
+| Tên Prompt | Cấp độ | Khi nào sử dụng |
+|---|---|---|
+| [Động não & Đổi mới Tư duy Đa chiều](tao_y_tuong.md) | Khởi phát - Ý tưởng | Áp dụng khung SCAMPER và tư duy đột phá (Lateral Thinking) để sinh ý tưởng mới, phân loại trên Ma trận Tác động vs Tính khả thi (Impact vs Feasibility 2x2). |
+| [Xây dựng Câu chuyện Thương hiệu & Kể chuyện](viet_cau_chuyen.md) | Cảm xúc - Lan tỏa | Áp dụng mô hình Hành trình Người Hùng (Hero's Journey) và Pixar Pitch để xây dựng câu chuyện thương hiệu, bài thuyết trình gọi vốn hoặc kịch bản truyền cảm hứng. |
+| [Thiết kế Hồ sơ Nhân vật & Chân dung Người dùng](xay_dung_nhan_vat.md) | Thấu cảm - Phác thảo | Xây dựng nhân vật đa chiều có động lực nội tâm, điểm yếu tâm lý (Fatal Flaw), bản đồ thấu cảm (Empathy Map) và trích đoạn hội thoại đặc trưng. |
 
-[Trở về danh mục](../README.md)
+---
+
+## Mối liên hệ với các Phân hệ Khác
+
+- Kết hợp với **[Khảo sát Khách hàng (JTBD)](../kinh_doanh/phan_tich_khach_hang.md)** để chuyển hóa nỗi đau khách hàng thành câu chuyện thương hiệu xúc động.
+- Kết hợp với **[Soạn thảo Bài viết Chuyên gia](../viet_noi_dung/viet_bai.md)** trong các chiến dịch truyền thông đa kênh.
+
+---
+[Trở về Danh mục gốc](../README.md)
