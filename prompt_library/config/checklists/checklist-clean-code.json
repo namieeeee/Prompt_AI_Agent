@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "id": "BEHAVIOR_INVARIANCE",
+      "description": "Refactored code preserves identical functional behavior; cite existing regression test pass results and unchanged public interfaces.",
+      "mandatory": true
+    },
+    {
+      "id": "SOLID_COUPLING",
+      "description": "Adhere to SOLID principles; decouple monolithic functions or classes into single-responsibility units; cite refactored class/function lines.",
+      "mandatory": true
+    },
+    {
+      "id": "COMPLEXITY",
+      "description": "Eliminate duplicate code (DRY), minimize deeply nested branching, and lower cyclomatic complexity; cite simplified control flows.",
+      "mandatory": true
+    },
+    {
+      "id": "READABILITY",
+      "description": "Use expressive domain naming, eliminate dead code, and maintain concise docstrings; cite updated declarations.",
+      "mandatory": false
+    }
+  ]
+}

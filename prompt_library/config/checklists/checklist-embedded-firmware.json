@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "id": "TRM_REGISTER_MAP",
+      "description": "Peripheral base addresses, register offsets, bitmask operations, and clock-gate enable sequences match the official chip TRM and vendor Errata workarounds; cite register definition lines.",
+      "mandatory": true
+    },
+    {
+      "id": "MISRA_SAFETY",
+      "description": "Adhere to safety-critical standards (MISRA-C:2012 / AUTOSAR C++): bounded loop counters, no unbounded recursion, no dynamic heap allocation after init, and explicit fixed-width integers (uint32_t, etc.); cite loop headers and type definitions.",
+      "mandatory": true
+    },
+    {
+      "id": "CONCURRENCY_ISR",
+      "description": "Shared resources between ISRs and thread context protected with volatile declarations, memory barriers, or critical section primitives; ISR execution path remains non-blocking; cite interrupt handlers and lock blocks.",
+      "mandatory": true
+    },
+    {
+      "id": "RESOURCE_BOUNDS",
+      "description": "Verify stack depth budgets, buffer boundary guards against overflow, and DMA cache coherency flush/invalidate before/after hardware transfers; cite buffer sizes and cache clean invocations.",
+      "mandatory": true
+    }
+  ]
+}

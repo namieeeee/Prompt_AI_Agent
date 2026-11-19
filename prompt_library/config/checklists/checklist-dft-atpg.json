@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "id": "SCAN_INTEGRITY",
+      "description": "Scan chain structural rules verified; clocks, resets, and tri-state buses are controllable in shift/capture modes; cite test-mode muxing and scan clock declarations.",
+      "mandatory": true
+    },
+    {
+      "id": "COVERAGE_TRIAGE",
+      "description": "Identify and classify fault coverage gaps (Stuck-At, Transition Delay, At-Speed); distinguish untestable faults (tie-offs, redundant logic) from test generation aborts; cite ATPG report summaries and fault lists.",
+      "mandatory": true
+    },
+    {
+      "id": "TEST_POINTS",
+      "description": "Evaluate test point insertion (control and observe points) for low-observability logic cones without violating functional timing closure; cite inserted test cell instances.",
+      "mandatory": false
+    },
+    {
+      "id": "MBIST_COMPLIANCE",
+      "description": "Memory BIST controllers execute test algorithms (March C+/raw), log repair signatures, and report diagnostic status registers accurately; cite MBIST controller state registers.",
+      "mandatory": true
+    }
+  ]
+}

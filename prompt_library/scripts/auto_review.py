@@ -33,11 +33,92 @@ def checked_data(data: object) -> str:
     return text
 
 
-def local_file(name: str) -> Path:
+def local_file(name: str | Path) -> Path:
     path = (BASE_DIR / name).resolve()
     if not path.is_relative_to(BASE_DIR) or not path.is_file():
         raise Blocked('Missing or out-of-library resource.')
     return path
+
+
+def resolve_skill_path(name: str) -> str:
+    """Resolve a skill name or path to a relative library path."""
+    clean = name.strip().replace('\\', '/')
+    candidate = (BASE_DIR / clean).resolve()
+    if candidate.is_file() and candidate.is_relative_to(BASE_DIR):
+        return str(candidate.relative_to(BASE_DIR)).replace('\\', '/')
+    named_skill = BASE_DIR / 'skills' / clean / 'SKILL.md'
+    if named_skill.is_file():
+        return f'skills/{clean}/SKILL.md'
+    raise Blocked(f'Skill not found: {name}. Use --list-skills to see available skills.')
+
+
+def resolve_checklist_path(name: str) -> str:
+    """Resolve a checklist name or path to a relative library path."""
+    clean = name.strip().replace('\\', '/')
+    candidate = (BASE_DIR / clean).resolve()
+    if candidate.is_file() and candidate.is_relative_to(BASE_DIR):
+        return str(candidate.relative_to(BASE_DIR)).replace('\\', '/')
+    in_checklists = BASE_DIR / 'config' / 'checklists' / clean
+    if in_checklists.is_file():
+        return f'config/checklists/{clean}'
+    if not clean.endswith('.json'):
+        with_ext = BASE_DIR / 'config' / 'checklists' / f'{clean}.json'
+        if with_ext.is_file():
+            return f'config/checklists/{clean}.json'
+        with_prefix = BASE_DIR / 'config' / 'checklists' / f'checklist-{clean}.json'
+        if with_prefix.is_file():
+            return f'config/checklists/checklist-{clean}.json'
+    raise Blocked(f'Checklist not found: {name}. Use --list-checklists to see available checklists.')
+
+
+def list_available_skills() -> list[dict]:
+    """Discover all canonical skills and their metadata."""
+    skills = []
+    skills_dir = BASE_DIR / 'skills'
+    if skills_dir.is_dir():
+        for skill_file in sorted(skills_dir.glob('*/SKILL.md')):
+            text = skill_file.read_text(encoding='utf-8')
+            name = skill_file.parent.name
+            desc = ''
+            if text.startswith('---\n'):
+                parts = text.split('---', 2)
+                if len(parts) >= 3:
+                    for line in parts[1].splitlines():
+                        if line.startswith('name:'):
+                            name = line.split('name:', 1)[1].strip()
+                        elif line.startswith('description:'):
+                            desc = line.split('description:', 1)[1].strip()
+            skills.append({'name': name, 'path': f'skills/{skill_file.parent.name}/SKILL.md', 'description': desc})
+    return skills
+
+
+def list_available_checklists() -> list[dict]:
+    """Discover all checklist JSON files and count their criteria."""
+    checklists = []
+    candidates = []
+    default_ch = BASE_DIR / 'config' / 'checklist.json'
+    if default_ch.is_file():
+        candidates.append(default_ch)
+    checklists_dir = BASE_DIR / 'config' / 'checklists'
+    if checklists_dir.is_dir():
+        candidates.extend(sorted(checklists_dir.glob('*.json')))
+    seen = set()
+    for check_file in candidates:
+        rel = str(check_file.relative_to(BASE_DIR)).replace('\\', '/')
+        if rel in seen:
+            continue
+        seen.add(rel)
+        try:
+            data = strict_json(check_file.read_text(encoding='utf-8'))
+            criteria_count = len(data.get('criteria', []))
+        except Exception:
+            criteria_count = 0
+        checklists.append({
+            'name': check_file.name,
+            'path': rel,
+            'criteria_count': criteria_count
+        })
+    return checklists
 
 
 def load_config(path: Path) -> dict:
@@ -88,6 +169,8 @@ def validate_config(config: dict) -> Path:
         for key in ('model', 'api_key_env', 'checklist'):
             if not isinstance(config[key], str) or not config[key]:
                 raise Blocked('Missing model/API variable/checklist setting.')
+        if 'skill' in config and (not isinstance(config['skill'], str) or not config['skill']):
+            raise Blocked('Invalid skill setting.')
         if not isinstance(config['generator_argv'], list) or not config['generator_argv']:
             raise Blocked('Configure generator_argv.')
         return root
@@ -188,7 +271,8 @@ def pipeline(task: str, config: dict, *, allow_edits: bool, generate=run_codex, 
         if instruction.is_symlink() or instruction.stat().st_size > 32_768:
             raise Blocked('Target instructions are linked or exceed budget.')
         target_rules.append({'path': 'AGENTS.md', 'content': instruction.read_text(encoding='utf-8')})
-    skill = local_file('skills/nghiem-thu-code/SKILL.md').read_text(encoding='utf-8')
+    skill_path = config.get('skill', 'skills/nghiem-thu-code/SKILL.md')
+    skill = local_file(skill_path).read_text(encoding='utf-8')
     initial = collect_source(root, scopes)
     baseline_git = git_evidence(root, initial, config['require_git'])
     feedback = None
@@ -249,12 +333,35 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description='Evidence-based review; config must name a target explicitly.')
     parser.add_argument('task', nargs='?', default='')
     parser.add_argument('--config', type=Path, default=BASE_DIR / 'config/config.yaml')
+    parser.add_argument('--skill', help='Skill name or relative path (e.g. security-audit, soc-arch-evaluation)')
+    parser.add_argument('--checklist', help='Checklist name or relative path (e.g. checklist-security-audit.json)')
+    parser.add_argument('--list-skills', action='store_true', help='List all available skills and exit')
+    parser.add_argument('--list-checklists', action='store_true', help='List all available checklists and exit')
     parser.add_argument('--preflight', action='store_true')
     parser.add_argument('--allow-edits', action='store_true')
     parser.add_argument('--send-to-openai', action='store_true', help='Authorize sending curated source/test evidence to OpenAI')
     args = parser.parse_args(argv)
+    if args.list_skills:
+        skills = list_available_skills()
+        print(f"{'SKILL NAME':<26} {'PATH':<38} DESCRIPTION")
+        print('-' * 95)
+        for s in skills:
+            desc = s['description'][:48] + '...' if len(s['description']) > 48 else s['description']
+            print(f"{s['name']:<26} {s['path']:<38} {desc}")
+        return 0
+    if args.list_checklists:
+        checklists = list_available_checklists()
+        print(f"{'CHECKLIST FILE':<36} {'CRITERIA':<10} PATH")
+        print('-' * 80)
+        for c in checklists:
+            print(f"{c['name']:<36} {c['criteria_count']:<10} {c['path']}")
+        return 0
     try:
         config = load_config(args.config)
+        if args.skill:
+            config['skill'] = resolve_skill_path(args.skill)
+        if args.checklist:
+            config['checklist'] = resolve_checklist_path(args.checklist)
         root = validate_config(config)
         criteria = load_checklist_text(local_file(config['checklist']))
         files = collect_source(root, config['source_scopes'])

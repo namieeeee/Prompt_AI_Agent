@@ -1,15 +1,72 @@
-# Configure a real target and curated scopes before running. No target chosen automatically.
-target_repository: ""
-source_scopes: []
-mode: review
-require_git: true
-checklist: config/checklist.json
-checklist_confirmed: false
-max_attempts: 3
-generator_argv: ["codex"]
-model: gpt-4o
-api_key_env: OPENAI_API_KEY
-timeout: 300
-tests_authorized: false
-tests: []
+# ==============================================================================
+# ENTERPRISE AI AGENT RUNTIME CONFIGURATION
+# ==============================================================================
+# Configure a real target repository and curated source scopes before running.
+# No target is ever chosen automatically (Zero-Trust Security Boundary).
+# ==============================================================================
 
+# [Mandatory] Absolute path to target repository being reviewed/tested (separate from prompt_library)
+target_repository: ""
+
+# [Mandatory] Scoped relative directories/files to inspect (e.g. ["src", "include", "tests"])
+source_scopes: []
+
+# [Pipeline Mode] 'review' (strictly read-only analysis) or 'generate' (allows host code repair with --allow-edits)
+mode: review
+
+# [Skill & Checklist Profiles]
+# Available Skills (use 'python scripts/auto_review.py --list-skills'):
+#   - skills/nghiem-thu-code/SKILL.md             (BE/FE Code Acceptance)
+#   - skills/refactor-clean-code/SKILL.md         (Refactoring & SOLID Clean Code)
+#   - skills/security-audit/SKILL.md              (OWASP Top 10 & AppSec Audit)
+#   - skills/soc-arch-evaluation/SKILL.md         (SoC Interconnect, Bus & Power)
+#   - skills/dft-coverage-triage/SKILL.md         (DFT Scan & ATPG Coverage Triage)
+#   - skills/embedded-firmware-qa/SKILL.md        (Embedded C, TRM Register & MISRA-C)
+#   - skills/tech-doc-verification/SKILL.md       (Technical Spec & Scientific Literature)
+skill: "skills/nghiem-thu-code/SKILL.md"
+
+# Available Checklists (use 'python scripts/auto_review.py --list-checklists'):
+#   - config/checklist.json                       (Default Core Criteria)
+#   - config/checklists/checklist-code-acceptance.json
+#   - config/checklists/checklist-clean-code.json
+#   - config/checklists/checklist-security-audit.json
+#   - config/checklists/checklist-soc-architecture.json
+#   - config/checklists/checklist-dft-atpg.json
+#   - config/checklists/checklist-embedded-firmware.json
+#   - config/checklists/checklist-tech-doc.json
+checklist: "config/checklist.json"
+
+# [Safety Gate] Set to true after human operator has confirmed the active checklist criteria
+checklist_confirmed: false
+
+# [Git Baseline] true requires HEAD commit in target repository; false allows gitless inspection
+require_git: true
+
+# [Attempt Budget] Maximum retry attempts (1 to 3) for Generator in 'generate' mode
+max_attempts: 3
+
+# [Generator Binary] Read-only Codex executable arguments
+generator_argv: ["codex"]
+
+# [Verifier Model] Model ID used by Verifier for structured JSON contract evaluation
+model: "gpt-4o"
+
+# [Security] Environment variable holding API key (never written to disk or config)
+api_key_env: "OPENAI_API_KEY"
+
+# [Timeout] Per-command and pipeline timeout in seconds (1 to 600)
+timeout: 300
+
+# [Test Execution Authority] Must be true to allow running configured test commands
+tests_authorized: false
+
+# [Configured Tests] Explicit command list (argv) evaluated independently by host
+# Example:
+# tests:
+#   - id: "unit"
+#     argv: ["python", "-m", "unittest", "discover", "-s", "tests"]
+#     timeout: 120
+#   - id: "lint"
+#     argv: ["flake8", "src"]
+#     timeout: 60
+tests: []

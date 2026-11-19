@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "id": "CITATION_AUTHENTICITY",
+      "description": "All core scientific claims, equations, and baseline comparison numbers provide verifiable citations (IEEE/ACM/ArXiv DOI, standard RFC, or hardware vendor datasheet); cite document citations.",
+      "mandatory": true
+    },
+    {
+      "id": "METHODOLOGY_RIGOR",
+      "description": "Experimental conditions, benchmark suites, test parameters, and hardware/software environments are explicitly documented for reproducibility; cite setup descriptions.",
+      "mandatory": true
+    },
+    {
+      "id": "DATA_INTEGRITY",
+      "description": "Metrics, trade-off curves, and comparative evaluation tables reflect balanced, unbiased analysis without suppressing trade-offs or cherry-picking scenarios; cite analysis sections.",
+      "mandatory": true
+    },
+    {
+      "id": "SPEC_CONFORMANCE",
+      "description": "Architectural specifications and design documents adhere to the stated functional interface limits and external system dependencies; cite specification constraints.",
+      "mandatory": false
+    }
+  ]
+}

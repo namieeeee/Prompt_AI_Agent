@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "id": "INJECTION_DEFENSE",
+      "description": "Parameterize all queries and sanitize external inputs to prevent SQL, OS command, and code injection attacks; cite sanitization boundaries.",
+      "mandatory": true
+    },
+    {
+      "id": "AUTH_ACCESS",
+      "description": "Enforce least privilege, verify caller identity and authorization checks, and prevent Broken Object Level Authorization (BOLA/IDOR); cite authorization gates.",
+      "mandatory": true
+    },
+    {
+      "id": "SECRET_HYGIENE",
+      "description": "Zero hardcoded credentials, API keys, certificates, or tokens in source or configuration; verify secrets resolve exclusively from environment/vault; cite config lines.",
+      "mandatory": true
+    },
+    {
+      "id": "EXCEPTION_SHIELDING",
+      "description": "Catch and sanitize runtime failures without revealing internal stack traces, database schema, or infrastructure topology to external clients; cite error handlers.",
+      "mandatory": true
+    }
+  ]
+}

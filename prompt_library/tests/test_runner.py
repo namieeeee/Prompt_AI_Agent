@@ -192,6 +192,33 @@ class RunnerTests(unittest.TestCase):
             self.assertEqual(kwargs['stdin'], 'untrusted task')
             self.assertIn('read-only', args[0])
 
+    def test_resolve_skill_and_checklist_paths(self):
+        self.assertEqual(runner.resolve_skill_path('security-audit'), 'skills/security-audit/SKILL.md')
+        self.assertEqual(runner.resolve_skill_path('skills/soc-arch-evaluation/SKILL.md'), 'skills/soc-arch-evaluation/SKILL.md')
+        self.assertEqual(runner.resolve_checklist_path('checklist-clean-code.json'), 'config/checklists/checklist-clean-code.json')
+        self.assertEqual(runner.resolve_checklist_path('security-audit'), 'config/checklists/checklist-security-audit.json')
+        with self.assertRaises(Blocked):
+            runner.resolve_skill_path('unknown_skill_xyz')
+        with self.assertRaises(Blocked):
+            runner.resolve_checklist_path('unknown_checklist_xyz')
+
+    def test_pipeline_with_custom_skill_and_checklist(self):
+        config = copy.deepcopy(self.config)
+        config['skill'] = 'skills/security-audit/SKILL.md'
+        config['checklist'] = 'config/checklists/checklist-security-audit.json'
+        criteria = runner.load_checklist_text(runner.local_file(config['checklist']))
+        def verify(payload, cfg):
+            data = json.loads(payload)
+            self.assertIn('Security Audit', data['skill'])
+            return json.dumps({
+                'result': 'PASS',
+                'reason': 'Clean security report',
+                'feedback': '',
+                'criteria': [{'id': c['id'], 'status': 'PASS', 'reason': 'ok', 'citations': [{'path': 'calc.py', 'line': 1}]} for c in criteria]
+            })
+        report = runner.pipeline('Audit', config, allow_edits=False, verify=verify)
+        self.assertEqual(report['status'], 'AWAITING_HUMAN')
+
 
 if __name__ == '__main__':
     unittest.main()

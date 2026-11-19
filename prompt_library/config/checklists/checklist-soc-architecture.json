@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "id": "BUS_PROTOCOL",
+      "description": "Bus interface signals comply with standard protocols (AXI/AHB/APB); verify VALID/READY handshake invariants, burst boundaries, and response channels without deadlock risk; cite protocol assertions or state machine transitions.",
+      "mandatory": true
+    },
+    {
+      "id": "QOS_LATENCY",
+      "description": "Bandwidth allocation, arbitration schemes, and FIFO depth sizing guarantee real-time latency budgets under peak load; cite arbitration weights and queue definitions.",
+      "mandatory": true
+    },
+    {
+      "id": "CACHE_COHERENCE",
+      "description": "Memory hierarchy maintains cache coherency across master agents; verify barrier semantics, snooping filter integrity, and memory ordering models; cite coherency port bindings.",
+      "mandatory": true
+    },
+    {
+      "id": "POWER_DOMAINS",
+      "description": "Multi-voltage domain interfaces verify UPF/CPF isolation rules, level-shifter insertions, and safe power-up/down reset sequencing; cite power controller control sequences.",
+      "mandatory": false
+    }
+  ]
+}
